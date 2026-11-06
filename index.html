@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<!--
+  BEFORE YOU PUBLISH — replace the highlighted yellow placeholder on the page:
+    1. Developer name   (search: Your Name)
+  Also check:
+    - App name: this page says "Fruit Cutting Game". Change it if your Play Store name is different.
+    - "Last updated" date near the top.
+  This page is accurate only while the app has: no INTERNET permission use, no ads, no analytics,
+  no crash-reporting SDK, no accounts. If you add any of those, update this page FIRST.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Privacy Policy – Fruit Cutting Game</title>
+  <meta name="description" content="Privacy policy for Fruit Cutting Game, an Android game you can play with touch or with your hand using the camera.">
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #2b2118;
+      --muted: #6b5b4b;
+      --line: #e8dccb;
+      --band: #4e2a00;
+      --band-line: rgba(0, 0, 0, 0.28);
+      --band-title: #ffd54f;
+      --band-text: #f6e7cf;
+      --accent: #1e8e5a;
+      --accent-bg: #e7f7ee;
+      --link: #0b6b3f;
+      --fill-bg: #fff1a8;
+      --fill-text: #4a3b00;
+      --table-head: #f7efe3;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #17120d;
+        --text: #f2e8da;
+        --muted: #b9a892;
+        --line: #3a2e22;
+        --band: #2a1700;
+        --band-line: rgba(0, 0, 0, 0.45);
+        --band-title: #ffd54f;
+        --band-text: #e9d8bd;
+        --accent: #69f0ae;
+        --accent-bg: #12301f;
+        --link: #69f0ae;
+        --fill-bg: #5a4a00;
+        --fill-text: #fff3b8;
+        --table-head: #241b12;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-text-size-adjust: 100%; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
+
+    /* ---------- Header: wooden planks, like the game's menu ---------- */
+    .band {
+      background-color: var(--band);
+      background-image: repeating-linear-gradient(
+        90deg,
+        transparent 0,
+        transparent 119px,
+        var(--band-line) 119px,
+        var(--band-line) 121px
+      );
+      color: var(--band-text);
+      padding: 3rem 1.25rem 2.75rem;
+    }
+
+    .band-inner,
+    main,
+    footer {
+      max-width: 44rem;
+      margin: 0 auto;
+    }
+
+    .band h1 {
+      margin: 0;
+      font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+      font-size: clamp(2rem, 7vw, 3.4rem);
+      line-height: 1.1;
+      font-weight: 800;
+      color: var(--band-title);
+      text-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .band p {
+      margin: 0.9rem 0 0;
+      max-width: 34rem;
+    }
+
+    .band .updated {
+      margin-top: 1.25rem;
+      font-size: 0.95rem;
+      opacity: 0.85;
+    }
+
+    /* ---------- Main text ---------- */
+    main { padding: 2rem 1.25rem 3rem; }
+
+    h2 {
+      margin: 2.6rem 0 0.6rem;
+      font-family: "Trebuchet MS", "Segoe UI", system-ui, sans-serif;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      font-weight: 800;
+    }
+
+    p { margin: 0.7rem 0; }
+
+    ul { padding-left: 1.3rem; margin: 0.7rem 0; }
+    li { margin: 0.35rem 0; }
+
+    a { color: var(--link); text-underline-offset: 0.15em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+
+    /* ---------- The short version ---------- */
+    .summary {
+      background: var(--accent-bg);
+      border-left: 6px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      padding: 1.4rem 1.4rem 1.2rem;
+      margin: -0.25rem 0 0;
+    }
+
+    .summary h2 { margin: 0 0 0.7rem; font-size: 1.6rem; }
+
+    .summary ul { list-style: none; padding: 0; margin: 0; }
+
+    .summary li {
+      position: relative;
+      padding-left: 1.9rem;
+      margin: 0.55rem 0;
+    }
+
+    .summary li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    /* ---------- Table ---------- */
+    .table-wrap {
+      overflow-x: auto;
+      margin: 1rem 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    table { border-collapse: collapse; width: 100%; min-width: 34rem; font-size: 0.98rem; }
+
+    th, td {
+      text-align: left;
+      vertical-align: top;
+      padding: 0.75rem 0.9rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    th { background: var(--table-head); font-weight: 700; }
+    tr:last-child td { border-bottom: 0; }
+
+    /* ---------- Placeholders you must replace ---------- */
+    .fill {
+      background: var(--fill-bg);
+      color: var(--fill-text);
+      padding: 0.05em 0.35em;
+      border-radius: 4px;
+    }
+
+    footer {
+      padding: 1.5rem 1.25rem 3rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    footer p { margin: 0; }
+  </style>
+</head>
+<body>
+
+  <header class="band">
+    <div class="band-inner">
+      <h1>Privacy Policy</h1>
+      <p>Fruit Cutting Game for Android</p>
+      <p class="updated">Last updated: November 7, 2026</p>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="summary" aria-labelledby="short-version">
+      <h2 id="short-version">Everything stays on your phone</h2>
+      <ul>
+        <li>No account and no sign-up.</li>
+        <li>The camera is optional. If you switch on hand control, the game looks at the live camera picture to find your hand. It never saves, records or sends that picture anywhere.</li>
+        <li>Your best score and your sound settings are saved on your phone only.</li>
+        <li>No ads, no analytics and no tracking.</li>
+      </ul>
+    </section>
+
+    <h2>About this policy</h2>
+    <p>This policy explains what information Fruit Cutting Game (“the app”) uses when you play. The app is published by <span class="fill">Your Name</span> (“we”, “us”). It applies only to this app.</p>
+
+    <h2>What the app uses</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Information</th>
+            <th scope="col">Why the app uses it</th>
+            <th scope="col">Where it goes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Live camera picture (only when hand control is on)</td>
+            <td>To find your hand, so you can cut fruit by moving it.</td>
+            <td>Read on your phone in real time. Not saved, not shared, not uploaded.</td>
+          </tr>
+          <tr>
+            <td>Best score</td>
+            <td>To show your high score on the menu.</td>
+            <td>Saved on your phone only.</td>
+          </tr>
+          <tr>
+            <td>Sound and music settings</td>
+            <td>To remember whether you turned them on or off.</td>
+            <td>Saved on your phone only.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Camera permission</h2>
+    <p>The app asks for the camera permission only so you can control the game with your hand. You can say no and still play with your finger.</p>
+    <ul>
+      <li>The hand-recognition model (Google MediaPipe) is built into the app and runs on your phone. It does not need an internet connection.</li>
+      <li>The app does not take photos or record video, and it does not keep any camera frames. Each picture is used once to find your hand and is then discarded.</li>
+      <li>You can take the permission back at any time in Android Settings, under Apps, then Fruit Cutting Game, then Permissions.</li>
+    </ul>
+
+    <h2>What we do not collect</h2>
+    <p>We do not collect, store or receive on any server:</p>
+    <ul>
+      <li>your name, email address or phone number</li>
+      <li>your location</li>
+      <li>your contacts, photos, videos or files</li>
+      <li>audio from your microphone</li>
+      <li>advertising identifiers or any other tracking data</li>
+    </ul>
+    <p>The app contains no advertising or analytics code, and it has no accounts.</p>
+
+    <h2>Third parties</h2>
+    <p>We do not sell or share personal information, because the app does not collect any.</p>
+    <ul>
+      <li><strong>Google MediaPipe</strong> is the hand-tracking library inside the app. It runs on your phone and does not send data to us or to Google.</li>
+      <li><strong>Google Play</strong> delivers the app. If you have turned on usage and diagnostics sharing on your phone, Google may collect technical information such as crash reports under Google’s own privacy policy, and may give us summaries of it. We do not control that collection.</li>
+    </ul>
+
+    <h2>Storage, backup and security</h2>
+    <p>Your best score and settings are kept in the app’s private storage on your phone, which other apps cannot normally read.</p>
+    <p>If backup is turned on for your phone, Android may include this app’s saved data in your Google backup, so your best score can return when you set up a new phone. Google and your device settings control that backup. Uninstalling the app removes its data from your phone.</p>
+
+    <h2>Children</h2>
+    <p>The app does not collect personal information from anyone, including children. If you are a parent or guardian and have a question, write to us at <a href="mailto:lilpsychologist410@gmail.com">lilpsychologist410@gmail.com</a>.</p>
+
+    <h2>Your choices</h2>
+    <ul>
+      <li>Play with touch only by not allowing the camera permission.</li>
+      <li>Turn sound and music off inside the app.</li>
+      <li>Delete your saved score and settings by clearing the app’s storage in Android Settings, or by uninstalling the app.</li>
+    </ul>
+    <p>We hold no personal data about you, so there is nothing for us to access, correct or delete on our side.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If a future version of the app changes what information it uses, for example by adding ads, analytics or online leaderboards, we will update this page and its date before that version is released.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy? Email <a href="mailto:lilpsychologist410@gmail.com">lilpsychologist410@gmail.com</a>.</p>
+
+  </main>
+
+  <footer>
+    <p>Fruit Cutting Game privacy policy. Last updated November 7, 2026.</p>
+  </footer>
+
+</body>
+</html>
